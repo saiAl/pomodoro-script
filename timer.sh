@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sessions=0
+sessions=1
 
 
 ## focus rounds function ##
