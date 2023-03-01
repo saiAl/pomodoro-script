@@ -15,14 +15,14 @@ rounds() {
 
         if [ $round -eq 5 ]
         then
-            echo take a break for 5 minutes.
+            echo take a break for 20 minutes.
             spd-say "stop"
-            sleep 5s # 5m 
+            sleep 5s # 20m 
 
         else
-            echo take a break for 20 minutes. 
+            echo take a break for 5 minutes. 
             spd-say "Break for 20 mintes"
-            sleep 2s # 20m 
+            sleep 2s # 5m 
         fi
 
     done
@@ -42,10 +42,10 @@ do
         if [ "$user_choice" == "N" || "$user_choice" == "n" ]
         then
             # summary()
-            # exit
+            exit 1
         fi 
     fi
 
-    # rounds
-
+    rounds
+    $((sessions++))
 done 
