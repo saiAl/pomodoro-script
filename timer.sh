@@ -5,8 +5,13 @@ sessions=0
 
 ## summary function ##
 
+summary() {
 
-# summary() {} 
+    # ask user for the title name for the summary.
+    # read user title name
+    # open a text editor for the user to write his summary
+    # upload the summary into Notion database via api.
+} 
 
 ## focus rounds function ##
 
