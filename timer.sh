@@ -16,12 +16,12 @@ rounds() {
         if [ $round -eq 5 ]
         then
             echo take a break for 20 minutes.
-            spd-say "stop"
+            spd-say "break for 20 minutes"
             sleep 5s # 20m 
 
         else
             echo take a break for 5 minutes. 
-            spd-say "Break for 20 mintes"
+            spd-say "stop"
             sleep 2s # 5m 
         fi
 
